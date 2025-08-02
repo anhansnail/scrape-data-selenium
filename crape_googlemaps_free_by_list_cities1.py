@@ -20,19 +20,20 @@ import time
 #     "travel companies in Breda",
 #     "travel companies in Haarlem"
 # ]
-keywords_italy = [
-    "travel companies in Rome",
-    "travel companies in Milan",
-    "travel companies in Florence",
-    "travel companies in Venice",
-    "travel companies in Naples",
-    "travel companies in Turin",
-    "travel companies in Bologna",
-    "travel companies in Genoa",
-    "travel companies in Verona",
-    "travel companies in Palermo"
+keywords_belgium = [
+    "travel companies in Brussels",
+    "travel companies in Antwerp",
+    "travel companies in Ghent",
+    "travel companies in Bruges",
+    "travel companies in Leuven",
+    "travel companies in Liège",
+    "travel companies in Namur",
+    "travel companies in Mons",
+    "travel companies in Mechelen",
+    "travel companies in Hasselt"
 ]
-keywords = keywords_italy
+
+keywords = keywords_belgium
 max_results = 600
 
 # --- Cài đặt Chrome ---
@@ -120,7 +121,7 @@ for keyword in keywords:
 
 # --- Lưu ra Excel ---
 df = pd.DataFrame(all_results)
-df.to_excel(f"ket_qua_google_maps_all_italy.xlsx", index=False)
+df.to_excel(f"ket_qua_google_maps_all_belgium.xlsx", index=False)
 print("🎉 Đã lưu file ket_qua_google_maps_all_keywords.xlsx")
 
 # --- Thoát trình duyệt ---

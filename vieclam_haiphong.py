@@ -2,59 +2,58 @@ import requests
 import pandas as pd
 import time
 
-# Base URL và tham số cố định
-base_url = "https://vieclamhaiphong.net/api/submit_ajax/articleListPaging"
-params = {
-    "channel_name": "jobs",
-    "category_id": 166,
-    "nganhnghe": 0,
-    "khuvuc": 0,
-    "trinhdo": 0,
-    "page_size": 100,  # Có thể tăng lên đến 3000 nếu API cho phép
-    "page": 1,
-    "skeyword": ""
-}
+# Khởi tạo danh sách kết quả
+all_jobs = []
 
-all_results = []
-total_pages = 1  # Khởi tạo tạm, sẽ cập nhật sau trang đầu tiên
+# Cấu hình khoảng trang
+page_start = 101
+page_end = 300  # Lấy đến trang 10
 
-for page in range(1, 1000):  # Duyệt đến khi không còn dữ liệu
-    print(f"🔄 Đang lấy trang {page}...")
-    params["page"] = page
-    response = requests.get(base_url, params=params)
-    response.raise_for_status()
-    data = response.json()
+for page in range(page_start, page_end + 1):
+    print(f"🔄 Đang tải trang {page}...")
 
-    if page == 1:
-        # Lấy số lượng trang từ phản hồi trang đầu
-        total_pages = int(data.get("pages", 1))
+    url = f"https://vieclamhaiphong.net/api/submit_ajax/articleListPaging"
+    params = {
+        "channel_name": "jobs",
+        "category_id": 166,
+        "nganhnghe": 0,
+        "khuvuc": 0,
+        "trinhdo": 0,
+        "page_size": 50,
+        "page": page,
+        "skeyword": ""
+    }
 
-    # Nếu không có dữ liệu -> dừng
-    if not data.get("data"):
-        print("✅ Không còn dữ liệu.")
-        break
+    try:
+        response = requests.get(url, params=params, timeout=10)
+        response.raise_for_status()
+        data = response.json()
 
-    # Trích thông tin cần thiết
-    for item in data["data"]:
-        all_results.append({
-            "id": item.get("id"),
-            "nhatuyendung": item.get("nhatuyendung"),
-            "user_name": item.get("user_name"),
-            "Contact": item.get("Contact"),
-            "DienThoaiNguoiLienHe": item.get("DienThoaiNguoiLienHe"),
-            "ReceiveEmail": item.get("ReceiveEmail"),
-            "DiaChiNguoiLienHe": item.get("DiaChiNguoiLienHe"),
-            "title": item.get("title"),
-            "ViTriDuTuyen": item.get("ViTriDuTuyen")
-        })
+        items = data.get("data", [])
+        if not items:
+            print(f"✅ Không có dữ liệu tại trang {page}.")
+            continue
 
-    # Dừng nếu đến trang cuối cùng
-    if page >= total_pages:
-        break
+        for job in items:
+            all_jobs.append({
+                "id": job.get("id"),
+                "nhatuyendung": job.get("nhatuyendung"),
+                "user_name": job.get("user_name"),
+                "Contact": job.get("Contact"),
+                "DienThoaiNguoiLienHe": job.get("DienThoaiNguoiLienHe"),
+                "ReceiveEmail": job.get("ReceiveEmail"),
+                "DiaChiNguoiLienHe": job.get("DiaChiNguoiLienHe"),
+                "title": job.get("title"),
+                "ViTriDuTuyen": job.get("ViTriDuTuyen"),
+            })
 
-    time.sleep(0.3)  # Tránh gửi quá nhanh làm server chặn
+        time.sleep(0.5)
 
-# Xuất ra file Excel
-df = pd.DataFrame(all_results)
-df.to_excel("vieclam_haiphong_all_pages.xlsx", index=False)
-print(f"✅ Đã lưu {len(df)} dòng dữ liệu vào 'vieclam_haiphong_all_pages.xlsx'")
+    except Exception as e:
+        print(f"❌ Lỗi tại trang {page}: {e}")
+        continue
+
+# Xuất ra file
+df = pd.DataFrame(all_jobs)
+df.to_excel(f"vieclamhaiphong_paging{page_start}.xlsx", index=False)
+print("📁 Đã lưu file 'vieclamhaiphong_paging.xlsx'")
