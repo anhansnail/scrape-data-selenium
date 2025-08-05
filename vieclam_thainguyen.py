@@ -58,8 +58,8 @@ def get_contact_info(link):
 # =================== CHẠY ===================
 
 all_data = []
-start_page = 56
-end_page = 65  # <-- có thể tăng khi ổn định
+start_page = 96
+end_page = 105  # <-- có thể tăng khi ổn định
 
 for page in range(start_page, end_page + 1):
     try:

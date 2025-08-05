@@ -3,10 +3,28 @@ import time
 
 # Danh sách số điện thoại định dạng quốc tế
 phone_numbers = [
-    "+31615467640",
-    "+31643413799",
-    "+31689937548"
+    "+31204204000",
+    "+19179990380",
+    "+31619934503",
+    "+31645070468",
+    "+31202389200",
+    "+31641072763",
+    "+31850163654",
+    "+31207372911",
+    "+31204204000",
+    "+31207529753",
+    "+31642134794",
+    "+31207529753",
+    "+31203989398",
+    "+31203086019",
+    "+31207700486",
+    "+31203202040",
+    "+31207372911",
+    "+31685313406",
+    "+31206262272",
+    "+31616616690"
 ]
+
 
 # Nội dung tin nhắn
 message = ("Hello,I’m Minh Anh from FTC Viet Nam travel, a Vietnam-based travel agency specializing in inbound tourism."
@@ -20,8 +38,11 @@ message = ("Hello,I’m Minh Anh from FTC Viet Nam travel, a Vietnam-based trave
 for number in phone_numbers:
     now = time.localtime()
     hour = now.tm_hour
-    minute = now.tm_min + 2  # gửi sau 2 phút từ bây giờ
+    # minute = now.tm_min + 2  # gửi sau 2 phút từ bây giờ
+    minute = now.tm_min + 1
+
+    # second = now.tm_sec + 15
 
     print(f"Đang gửi tới {number} lúc {hour}:{minute}")
-    pywhatkit.sendwhatmsg(number, message, hour, minute, wait_time=10)
-    time.sleep(30)  # đợi để đảm bảo tin nhắn được gửi
+    pywhatkit.sendwhatmsg(number, message, hour, minute, wait_time=15)  # gửi sau 15s từ bây giờ
+    time.sleep(15)  # đợi để đảm bảo tin nhắn được gửi
