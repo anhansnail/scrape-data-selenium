@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5e7e9c3-0930-41a8-875b-b5af2cc26abf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/vieclam_phutho.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vieclam_phutho2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vieclam_ninhbinh.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuyen_dung_vinhphuc_pages250.csv" beforeDir="false" afterPath="$PROJECT_DIR$/tuyen_dung_vinhphuc_pages250.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuyen_dung_vinhphuc_pages300.csv" beforeDir="false" afterPath="$PROJECT_DIR$/tuyen_dung_vinhphuc_pages300.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuyen_dung_vinhphuc_pages340.csv" beforeDir="false" afterPath="$PROJECT_DIR$/tuyen_dung_vinhphuc_pages340.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuyen_dung_vinhphuc_pages360.csv" beforeDir="false" afterPath="$PROJECT_DIR$/tuyen_dung_vinhphuc_pages360.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuyen_dung_vinhphuc_pages400.csv" beforeDir="false" afterPath="$PROJECT_DIR$/tuyen_dung_vinhphuc_pages400.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tuyen_dung_vinhphuc_pages450.csv" beforeDir="false" afterPath="$PROJECT_DIR$/tuyen_dung_vinhphuc_pages450.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +49,7 @@
     "Python.vieclam_haiphong.executor": "Run",
     "Python.vieclam_halong.executor": "Run",
     "Python.vieclam_hungyen.executor": "Run",
+    "Python.vieclam_ninhbinh.executor": "Run",
     "Python.vieclam_phutho.executor": "Run",
     "Python.vieclam_phutho2.executor": "Run",
     "Python.vieclam_thainguyen.executor": "Run",
@@ -131,7 +125,9 @@
       <workItem from="1754269491735" duration="10677000" />
       <workItem from="1754442625509" duration="12236000" />
       <workItem from="1754528874497" duration="13036000" />
-      <workItem from="1754629476198" duration="6069000" />
+      <workItem from="1754629476198" duration="6580000" />
+      <workItem from="1754703350201" duration="2204000" />
+      <workItem from="1754879297470" duration="5896000" />
     </task>
     <servers />
   </component>
@@ -153,9 +149,10 @@
     <SUITE FILE_PATH="coverage/scrape_data$vieclam_haiphong.coverage" NAME="vieclam_haiphong Coverage Results" MODIFIED="1754096780208" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/scrape_data$crape_googlemaps_free_by_list_cities1.coverage" NAME="crape_googlemaps_free_by_list_cities1 Coverage Results" MODIFIED="1754030077246" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/scrape_data$vieclam_vinhphuc2.coverage" NAME="vieclam_vinhphuc2 Coverage Results" MODIFIED="1754555723381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/scrape_data$vieclam_ninhbinh.coverage" NAME="vieclam_ninhbinh Coverage Results" MODIFIED="1754886920913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/scrape_data$crape_googlemaps_free_by_list_cities3.coverage" NAME="crape_googlemaps_free_by_list_cities3 Coverage Results" MODIFIED="1754275519359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/scrape_data$crape_googlemaps_free.coverage" NAME="crape_googlemaps_free Coverage Results" MODIFIED="1754275474394" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/scrape_data$crape_googlemaps_free_by_list_cities4.coverage" NAME="crape_googlemaps_free_by_list_cities4 Coverage Results" MODIFIED="1754377117654" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/scrape_data$crape_googlemaps_free.coverage" NAME="crape_googlemaps_free Coverage Results" MODIFIED="1754879685118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/scrape_data$vieclam_halong.coverage" NAME="vieclam_halong Coverage Results" MODIFIED="1754108176813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/scrape_data$send_whatsapp.coverage" NAME="send_whatsapp Coverage Results" MODIFIED="1754560761384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
