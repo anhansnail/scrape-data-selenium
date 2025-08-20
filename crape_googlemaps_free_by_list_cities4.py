@@ -9,28 +9,28 @@ import time
 
 # --- Danh sách từ khóa ---
 # keywords_netherlands  = [
-#     "travel companies in Amsterdam",
-#     "travel companies in Rotterdam",
-#     "travel companies in The Hague",
-#     "travel companies in Utrecht",
-#     "travel companies in Eindhoven",
-#     "travel companies in Groningen",
-#     "travel companies in Maastricht",
-#     "travel companies in Tilburg",
-#     "travel companies in Breda",
-#     "travel companies in Haarlem"
+#     "school in Amsterdam",
+#     "school in Rotterdam",
+#     "school in The Hague",
+#     "school in Utrecht",
+#     "school in Eindhoven",
+#     "school in Groningen",
+#     "school in Maastricht",
+#     "school in Tilburg",
+#     "school in Breda",
+#     "school in Haarlem"
 # ]
 keywords_spain = [
-    "travel companies in Madrid",
-    "travel companies in Barcelona",
-    "travel companies in Valencia",
-    "travel companies in Seville",
-    "travel companies in Zaragoza",
-    "travel companies in Málaga",
-    "travel companies in Bilbao",
-    "travel companies in Granada",
-    "travel companies in Alicante",
-    "travel companies in Salamanca"
+    "school in Madrid",
+    "school in Barcelona",
+    "school in Valencia",
+    "school in Seville",
+    "school in Zaragoza",
+    "school in Málaga",
+    "school in Bilbao",
+    "school in Granada",
+    "school in Alicante",
+    "school in Salamanca"
 ]
 
 keywords = keywords_spain
@@ -121,7 +121,7 @@ for keyword in keywords:
 
 # --- Lưu ra Excel ---
 df = pd.DataFrame(all_results)
-df.to_excel(f"ket_qua_google_maps_all_spain.xlsx", index=False)
+df.to_excel(f"ket_qua_school_all_spain.xlsx", index=False)
 print("🎉 Đã lưu file ket_qua_google_maps_all_keywords.xlsx")
 
 # --- Thoát trình duyệt ---
