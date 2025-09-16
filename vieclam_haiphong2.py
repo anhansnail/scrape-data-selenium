@@ -5,8 +5,8 @@ import pandas as pd
 
 # ================== ⚙️ CẤU HÌNH ==================
 BASE_URL = "https://www.tuyendunghaiphong.vn"
-page_start = 501   # Trang bắt đầu
-page_end = 620     # Trang kết thúc
+page_start = 1   # Trang bắt đầu
+page_end = 4     # Trang kết thúc
 delay = 1         # Giãn cách giữa các request (giây)
 
 # ================== 📦 LƯU KẾT QUẢ ==================
@@ -55,6 +55,6 @@ for page in range(page_start, page_end + 1):
 
 # ================== 💾 LƯU RA EXCEL ==================
 df = pd.DataFrame(all_jobs)
-df.to_excel(f"2tuyendung_haiphong{page_start}to{page_end}.xlsx", index=False)
+df.to_excel(f"2tuyendung_haiphong{page_start}to{page_end}20250916.xlsx", index=False)
 print(f"📊 Tổng số bài lấy được: {len(all_jobs)}")
 print(f"2tuyendung_haiphong{page_start}to{page_end}.xlsx")

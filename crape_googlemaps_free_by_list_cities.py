@@ -8,31 +8,31 @@ import pandas as pd
 import time
 
 # --- Danh sách từ khóa ---
-# keywords_netherlands  = [
-#     "travel companies in Amsterdam",
-#     "travel companies in Rotterdam",
-#     "travel companies in The Hague",
-#     "travel companies in Utrecht",
-#     "travel companies in Eindhoven",
-#     "travel companies in Groningen",
-#     "travel companies in Maastricht",
-#     "travel companies in Tilburg",
-#     "travel companies in Breda",
-#     "travel companies in Haarlem"
-# ]
-keywords_italy = [
-    "travel companies in Rome",
-    "travel companies in Milan",
-    "travel companies in Florence",
-    "travel companies in Venice",
-    "travel companies in Naples",
-    "travel companies in Turin",
-    "travel companies in Bologna",
-    "travel companies in Genoa",
-    "travel companies in Verona",
-    "travel companies in Palermo"
+keywords_netherlands  = [
+    "school in Amsterdam",
+    "school in Rotterdam",
+    "school in The Hague",
+    "school in Utrecht",
+    "school in Eindhoven",
+    "school in Groningen",
+    "school in Maastricht",
+    "school in Tilburg",
+    "school in Breda",
+    "school in Haarlem"
 ]
-keywords = keywords_italy
+# keywords_italy = [
+#     "school in Rome",
+#     "school in Milan",
+#     "school in Florence",
+#     "school in Venice",
+#     "school in Naples",
+#     "school in Turin",
+#     "school in Bologna",
+#     "school in Genoa",
+#     "school in Verona",
+#     "school in Palermo"
+# ]
+keywords = keywords_netherlands
 max_results = 600
 
 # --- Cài đặt Chrome ---
@@ -120,7 +120,7 @@ for keyword in keywords:
 
 # --- Lưu ra Excel ---
 df = pd.DataFrame(all_results)
-df.to_excel(f"ket_qua_google_maps_all_italy.xlsx", index=False)
+df.to_excel(f"ket_qua_school_all_netherlands.xlsx", index=False)
 print("🎉 Đã lưu file ket_qua_google_maps_all_keywords.xlsx")
 
 # --- Thoát trình duyệt ---
