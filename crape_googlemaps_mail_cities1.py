@@ -1,3 +1,4 @@
+import re
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.chrome.service import Service
@@ -13,27 +14,10 @@ keywords_netherlands  = [
     "travel companies in Rotterdam",
     "travel companies in The Hague",
     "travel companies in Utrecht",
-    "travel companies in Eindhoven",
-    "travel companies in Groningen",
-    "travel companies in Maastricht",
-    "travel companies in Tilburg",
-    "travel companies in Breda",
-    "travel companies in Haarlem"
+    "travel companies in Eindhoven"
 ]
-# keywords_italy = [
-#     "school in Rome",
-#     "school in Milan",
-#     "school in Florence",
-#     "school in Venice",
-#     "school in Naples",
-#     "school in Turin",
-#     "school in Bologna",
-#     "school in Genoa",
-#     "school in Verona",
-#     "school in Palermo"
-# ]
 keywords = keywords_netherlands
-max_results = 600
+max_results = 1000   # test nhanh
 
 # --- Cài đặt Chrome ---
 chrome_options = Options()
@@ -44,6 +28,52 @@ chrome_options.add_argument("--user-agent=Mozilla/5.0")
 service = Service("D:/prj_test_1/chromedriver/chromedriver.exe")
 driver = webdriver.Chrome(service=service, options=chrome_options)
 wait = WebDriverWait(driver, 15)
+
+def extract_emails_from_page(source):
+    """Dùng regex tìm tất cả email trong page_source"""
+    found_emails = re.findall(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}", source)
+    return list(set(found_emails)) if found_emails else []
+
+def get_emails_from_website(url):
+    """Mở website và tìm email cả trang chính + trang Contact"""
+    emails = []
+    try:
+        # Mở trang chính
+        driver.execute_script("window.open(arguments[0]);", url)
+        driver.switch_to.window(driver.window_handles[-1])
+        time.sleep(5)
+
+        page_source = driver.page_source
+        emails.extend(extract_emails_from_page(page_source))
+
+        # Tìm link Contact
+        links = driver.find_elements(By.TAG_NAME, "a")
+        contact_links = []
+        for link in links:
+            try:
+                href = link.get_attribute("href")
+                if href and any(word in href.lower() for word in ["contact", "lien-he", "kontact", "kontakt"]):
+                    contact_links.append(href)
+            except:
+                continue
+
+        if contact_links:
+            for clink in set(contact_links):
+                try:
+                    driver.get(clink)
+                    time.sleep(4)
+                    contact_source = driver.page_source
+                    emails.extend(extract_emails_from_page(contact_source))
+                except:
+                    continue
+
+    except Exception as e:
+        print("❌ Không lấy được email website:", e)
+    finally:
+        driver.close()
+        driver.switch_to.window(driver.window_handles[0])
+
+    return list(set(emails))
 
 # --- Vòng lặp qua từng từ khóa ---
 all_results = []
@@ -61,7 +91,7 @@ for keyword in keywords:
         scrollable_div = wait.until(EC.presence_of_element_located((By.XPATH, '//div[@role="feed"]')))
         for _ in range(100):
             driver.execute_script("arguments[0].scrollTop = arguments[0].scrollHeight", scrollable_div)
-            time.sleep(2)
+            time.sleep(1.5)
     except:
         print("❌ Không tìm thấy danh sách kết quả.")
         continue
@@ -79,14 +109,16 @@ for keyword in keywords:
             driver.execute_script("arguments[0].scrollIntoView(true);", item)
             time.sleep(1)
             item.click()
-            time.sleep(4)
+            time.sleep(3)
 
             name_el = wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "h1.DUwDvf")))
             name = name_el.text.strip()
 
-            address = phone = website = email = ""
+            address = phone = website = ""
+            email_list = []
             all_info = []
 
+            # Lấy thông tin cơ bản
             info_blocks = driver.find_elements(By.CSS_SELECTOR, '.Io6YTe.fontBodyMedium.kR99db')
             for block in info_blocks:
                 text = block.text.strip()
@@ -98,7 +130,25 @@ for keyword in keywords:
                 elif "," in text and len(text) > 10:
                     address = text
                 elif "@" in text and "." in text:
-                    email = text
+                    email_list.append(text)  # email có thể có sẵn trong Maps
+
+            # --- Lấy website chính xác từ nút "Website" ---
+            try:
+                website_btn = driver.find_element(By.XPATH, '//a[contains(@aria-label, "Website")]')
+                website_link = website_btn.get_attribute("href")
+                if website_link and "http" in website_link:
+                    if "/url?q=" in website_link:
+                        website_link = website_link.split("/url?q=")[1].split("&")[0]
+                    website = website_link
+
+                    # 🔑 Quét email trong website (trang chính + contact)
+                    website_emails = get_emails_from_website(website_link)
+                    email_list.extend(website_emails)
+            except:
+                pass
+
+            # Ghép email thành 1 chuỗi
+            email = ", ".join(list(set(email_list)))
 
             results.append({
                 "Từ khóa": keyword,
@@ -110,18 +160,17 @@ for keyword in keywords:
                 "Thông tin khác": " | ".join(all_info)
             })
 
-            print(f"{index+1}. ✅ {name}")
+            print(f"{index+1}. ✅ {name} ({website}) -> Emails: {email}")
         except Exception as e:
             print(f"❌ Lỗi tại kết quả {index+1}: {e}")
             continue
 
-    # Gộp vào kết quả chung
     all_results.extend(results)
 
 # --- Lưu ra Excel ---
 df = pd.DataFrame(all_results)
-df.to_excel(f"ket_qua_travel_agent_all_netherlands.xlsx", index=False)
-print("🎉 Đã lưu file ket_qua_google_maps_all_keywords.xlsx")
+df.to_excel("ket_qua_travel_agent_all_netherlands.xlsx", index=False)
+print("🎉 Đã lưu file ket_qua_travel_agent_all_netherlands.xlsx")
 
 # --- Thoát trình duyệt ---
 driver.quit()
