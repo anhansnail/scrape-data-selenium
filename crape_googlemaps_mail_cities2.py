@@ -9,19 +9,31 @@ import pandas as pd
 import time
 
 # --- Danh sách từ khóa ---
-keywords_netherlands  = [
-    # "travel companies in Amsterdam",
-    # "travel companies in Rotterdam",
-    # "travel companies in The Hague",
-    # "travel companies in Utrecht",
-    # "travel companies in Eindhoven"
-        "travel companies in Groningen",
-        "travel companies in Maastricht",
-        "travel companies in Tilburg",
-        "travel companies in Breda",
-        "travel companies in Haarlem"
+# keywords_netherlands  = [
+#     # "travel companies in Amsterdam",
+#     # "travel companies in Rotterdam",
+#     # "travel companies in The Hague",
+#     # "travel companies in Utrecht",
+#     # "travel companies in Eindhoven"
+#     "travel companies in Groningen",
+#     "travel companies in Maastricht",
+#     "travel companies in Tilburg",
+#     "travel companies in Breda",
+#     "travel companies in Haarlem"
+# ]
+keywords_austria = [
+    "travel companies in Vienna",
+    "travel companies in Salzburg",
+    "travel companies in Innsbruck",
+    "travel companies in Graz",
+    "travel companies in Linz",
+    "travel companies in Klagenfurt",
+    "travel companies in Villach",
+    "travel companies in Bregenz",
+    "travel companies in St. Pölten",
+    "travel companies in Wels"
 ]
-keywords = keywords_netherlands
+keywords = keywords_austria
 max_results = 1000   # test nhanh
 
 # --- Cài đặt Chrome ---
@@ -174,8 +186,8 @@ for keyword in keywords:
 
 # --- Lưu ra Excel ---
 df = pd.DataFrame(all_results)
-df.to_excel("ket_qua_travel_agent_all_netherlands2.xlsx", index=False)
-print("🎉 Đã lưu file ket_qua_travel_agent_all_netherlands.xlsx")
+df.to_excel("ket_qua_travel_agent_all_austria.xlsx", index=False)
+print("🎉 Đã lưu file ket_qua_travel_agent_all_austria.xlsx")
 
 # --- Thoát trình duyệt ---
 driver.quit()
