@@ -10,16 +10,16 @@ import time
 
 # --- Danh sách từ khóa ---
 keywords_belgium = [
-    # "school in Brussels",
-    # "school in Antwerp",
-    # "school in Ghent",
-    # "school in Bruges",
-    # "school in Leuven"
-    "school in Liège",
-    "school in Namur",
-    "school in Mons",
-    "school in Mechelen",
-    "school in Hasselt"
+    # "travel companies in Brussels",
+    # "travel companies in Antwerp",
+    # "travel companies in Ghent",
+    # "travel companies in Bruges",
+    # "travel companies in Leuven"
+    "travel companies in Liège",
+    "travel companies in Namur",
+    "travel companies in Mons",
+    "travel companies in Mechelen",
+    "travel companies in Hasselt"
 ]
 keywords = keywords_belgium
 max_results = 1000   # test nhanh
@@ -174,7 +174,7 @@ for keyword in keywords:
 
 # --- Lưu ra Excel ---
 df = pd.DataFrame(all_results)
-df.to_excel("ket_qua_travel_agent_all_belgium.xlsx", index=False)
+df.to_excel("ket_qua_travel_agent_all_belgium3.xlsx", index=False)
 print("🎉 Đã lưu file ket_qua_travel_agent_all_belgium.xlsx")
 
 # --- Thoát trình duyệt ---

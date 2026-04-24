@@ -64,8 +64,8 @@ def crawl_jobs_in_page(page):
 
 
 # ==== ⚙️ Thiết lập khoảng trang ====
-start_page = 3
-end_page = 120   # 👉 Thay đổi tại đây nếu cần
+start_page = 1
+end_page = 14   # 👉 Thay đổi tại đây nếu cần
 
 all_jobs = []
 
@@ -74,7 +74,7 @@ for page in range(start_page, end_page + 1):
     all_jobs.extend(jobs)
 
 # ==== 📦 Ghi ra file CSV ====
-with open(f"tuyen_dung_phutho_pages{end_page}.csv", "w", newline="", encoding="utf-8-sig") as f:
+with open(f"260205tuyen_dung_phutho_pages{end_page}.csv", "w", newline="", encoding="utf-8-sig") as f:
     writer = csv.DictWriter(f, fieldnames=["title", "url", "company", "salary", "deadline", "location", "lien_he"])
     writer.writeheader()
     writer.writerows(all_jobs)

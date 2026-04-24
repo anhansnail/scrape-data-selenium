@@ -22,7 +22,7 @@ ws.append(["Link", "Thông tin công ty", "Email", "Số điện thoại"])
 
 # === Bắt đầu từ trang 22, duyệt nhiều trang ===
 start_page = 1
-end_page = 50  # Thay số trang bạn muốn quét ngày 11/09
+end_page = 200  # Thay số trang bạn muốn quét ngày 11/09
 
 for page in range(start_page, end_page + 1):
     url = f"https://vieclamhaiduong.vn/viec-lam-trang-{page}.html?per-page=15"
@@ -48,7 +48,7 @@ for page in range(start_page, end_page + 1):
 
             company_links = driver.find_elements(By.CSS_SELECTOR, ".company-info li a")
             try:
-                company_name = driver.find_element(By.CSS_SELECTOR, ".job-details-info .company-info h2").text.strip()
+                company_name = driver.find_element(By.CSS_SELECTOR, ".job-details-info .company-info h3").text.strip()
             except:
                 company_name = "Không rõ"
             company_info = [el.text + " (" + el.get_attribute("href") + ")" for el in company_links]
@@ -75,7 +75,7 @@ for page in range(start_page, end_page + 1):
             link1 = link
 
 # === Lưu Excel ===
-excel_filename = f"250911ket_qua_tuyen_dung_HD'{end_page}'.xlsx"
+excel_filename = f"251226ket_qua_tuyen_dung_HD'{end_page}'.xlsx"
 wb.save(excel_filename)
 print(f"\n✅ Đã lưu dữ liệu vào '{excel_filename}'")
 

@@ -58,8 +58,8 @@ def get_contact_info(link):
 # =================== CHẠY ===================
 
 all_data = []
-start_page = 101
-end_page = 170  # <-- có thể tăng khi ổn định
+start_page = 1
+end_page = 30  # <-- có thể tăng khi ổn định
 
 for page in range(start_page, end_page + 1):
     try:
@@ -80,5 +80,5 @@ for page in range(start_page, end_page + 1):
 
 # Ghi ra Excel
 df = pd.DataFrame(all_data)
-df.to_excel(f"vieclam_ninhbinh_p{start_page}_to_p{end_page}.xlsx", index=False)
+df.to_excel(f"vieclam_ninhbinh_p{start_page}_to_p{end_page}241225.xlsx", index=False)
 print("✅ Đã lưu dữ liệu ra Excel.")

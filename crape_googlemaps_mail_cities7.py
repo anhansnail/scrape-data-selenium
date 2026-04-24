@@ -21,19 +21,19 @@ import time
 #     "travel companies in Breda",
 #     "travel companies in Haarlem"
 # ]
-keywords_switzerland = [
-    # "travel companies in Zurich",
-    # "travel companies in Geneva",
-    # "travel companies in Basel",
-    "travel companies in Bern",
-    "travel companies in Lausanne",
-    "travel companies in Lucerne",
-    "travel companies in Lugano",
-    "travel companies in St. Gallen",
-    "travel companies in Winterthur",
-    "travel companies in Biel"
+keywords_usa = [
+    "travel companies in New York",
+    "travel companies in Los Angeles",
+    "travel companies in Chicago",
+    "travel companies in Houston",
+    "travel companies in Phoenix",
+    "travel companies in Philadelphia",
+    "travel companies in San Antonio",
+    "travel companies in San Diego",
+    "travel companies in Dallas",
+    "travel companies in San Jose"
 ]
-keywords = keywords_switzerland
+keywords = keywords_usa
 max_results = 1000   # test nhanh
 
 # --- Cài đặt Chrome ---
@@ -186,8 +186,8 @@ for keyword in keywords:
 
 # --- Lưu ra Excel ---
 df = pd.DataFrame(all_results)
-df.to_excel("ket_qua_travel_agent_all_switzerland2.xlsx", index=False)
-print("🎉 Đã lưu file ket_qua_travel_agent_all_switzerland.xlsx")
+df.to_excel("ket_qua_travel_agent_all_usa.xlsx", index=False)
+print("🎉 Đã lưu file ket_qua_travel_agent_all_usa.xlsx")
 
 # --- Thoát trình duyệt ---
 driver.quit()

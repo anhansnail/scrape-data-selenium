@@ -4,12 +4,12 @@ import pandas as pd
 import time
 
 # ========== ⚙️ CẤU HÌNH ========== #
-start_page = 3  # Trang bắt đầu
-end_page = 40    # Trang kết thúc
+start_page = 1  # Trang bắt đầu
+end_page = 100    # Trang kết thúc
 
 # ========== 🧩 LẤY LINK BÀI CHI TIẾT ========== #
 def get_detail_links(page_index):
-    url = f"http://vieclamphutho.gov.vn/ViecTimNguoi/ListViecTimNguoiPartial?p={page_index}&IdChuyenMucFilter=&elementItem=load-viec-tim-nguoi&pageSize=0&pageIndex={page_index}"
+    url = f"https://vieclamphutho.gov.vn/ViecTimNguoi/ListViecTimNguoiPartial?p={page_index}&IdChuyenMucFilter=&elementItem=load-viec-tim-nguoi&pageSize=0&pageIndex={page_index}"
 
     try:
         response = requests.get(url, timeout=10)
@@ -20,7 +20,7 @@ def get_detail_links(page_index):
         for a_tag in soup.select("a[href^='/Viec-tim-nguoi/']"):
             href = a_tag.get("href")
             if href:
-                full_url = f"http://vieclamphutho.gov.vn{href}"
+                full_url = f"https://vieclamphutho.gov.vn{href}"
                 links.append(full_url)
 
         return list(set(links))  # loại bỏ trùng lặp

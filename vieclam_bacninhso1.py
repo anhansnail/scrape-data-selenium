@@ -21,8 +21,8 @@ ws.title = "Thông tin tuyển dụng"
 ws.append(["Link", "Thông tin công ty", "Email", "Số điện thoại"])
 
 # === Bắt đầu từ trang 22, duyệt nhiều trang ===
-start_page = 421
-end_page = 480  # Thay số trang bạn muốn quét
+start_page = 101
+end_page = 150  # Thay số trang bạn muốn quét
 
 for page in range(start_page, end_page + 1):
     url = f"https://vieclambacninhso1.vn/viec-lam-trang-{page}.html?per-page=15"

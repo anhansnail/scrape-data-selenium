@@ -5,12 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5e7e9c3-0930-41a8-875b-b5af2cc26abf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/crape_googlemaps_mail_cities1.1.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crape_googlemaps_mail_cities2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crape_googlemaps_mail_cities3.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crape_googlemaps_mail_cities4.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crape_googlemaps_mail_cities5.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crape_googlemaps_mail_cities6.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/crape_googlemaps_mail_cities7.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vieclam_hungyen2.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vieclam_hungyen3_laycamail_va_sdt.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crape_googlemaps_mail_cities1.py" beforeDir="false" afterPath="$PROJECT_DIR$/crape_googlemaps_mail_cities1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crape_googlemaps_mail_cities1.1.py" beforeDir="false" afterPath="$PROJECT_DIR$/crape_googlemaps_mail_cities1.1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crape_googlemaps_mail_cities3.py" beforeDir="false" afterPath="$PROJECT_DIR$/crape_googlemaps_mail_cities3.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/crape_googlemaps_mail_cities4.py" beforeDir="false" afterPath="$PROJECT_DIR$/crape_googlemaps_mail_cities4.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/thong_tin_lien_he_phutho_1_2.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vieclam_HaiDuong.py" beforeDir="false" afterPath="$PROJECT_DIR$/vieclam_HaiDuong.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vieclam_bacninhso1.py" beforeDir="false" afterPath="$PROJECT_DIR$/vieclam_bacninhso1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vieclam_ninhbinh.py" beforeDir="false" afterPath="$PROJECT_DIR$/vieclam_ninhbinh.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vieclam_phutho.py" beforeDir="false" afterPath="$PROJECT_DIR$/vieclam_phutho.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vieclam_phutho2.py" beforeDir="false" afterPath="$PROJECT_DIR$/vieclam_phutho2.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,6 +65,9 @@
     "Python.crape_googlemaps_mail_cities2.executor": "Run",
     "Python.crape_googlemaps_mail_cities3.executor": "Run",
     "Python.crape_googlemaps_mail_cities4.executor": "Run",
+    "Python.crape_googlemaps_mail_cities5.executor": "Run",
+    "Python.crape_googlemaps_mail_cities6.executor": "Run",
+    "Python.crape_googlemaps_mail_cities7.executor": "Run",
     "Python.send_whatsapp.executor": "Run",
     "Python.vieclam_HaiDuong.executor": "Run",
     "Python.vieclam_bacninh_izabacninh.executor": "Run",
@@ -66,6 +78,8 @@
     "Python.vieclam_haiphong2_getmails.executor": "Run",
     "Python.vieclam_halong.executor": "Run",
     "Python.vieclam_hungyen.executor": "Run",
+    "Python.vieclam_hungyen2.executor": "Run",
+    "Python.vieclam_hungyen3_laycamail_va_sdt.executor": "Run",
     "Python.vieclam_ninhbinh.executor": "Run",
     "Python.vieclam_phutho.executor": "Run",
     "Python.vieclam_phutho2.executor": "Run",
@@ -192,6 +206,25 @@
       <workItem from="1759713679186" duration="12647000" />
       <workItem from="1759801150376" duration="2051000" />
       <workItem from="1759973601185" duration="12588000" />
+      <workItem from="1760058659792" duration="6825000" />
+      <workItem from="1760146277738" duration="1956000" />
+      <workItem from="1760340405817" duration="2594000" />
+      <workItem from="1760404937943" duration="5491000" />
+      <workItem from="1760494055769" duration="4511000" />
+      <workItem from="1760935033729" duration="1454000" />
+      <workItem from="1761010601151" duration="2141000" />
+      <workItem from="1764660381444" duration="606000" />
+      <workItem from="1764727338896" duration="1245000" />
+      <workItem from="1766379792496" duration="2168000" />
+      <workItem from="1766547611490" duration="5508000" />
+      <workItem from="1766717654175" duration="5453000" />
+      <workItem from="1767932143139" duration="1017000" />
+      <workItem from="1768028514320" duration="3148000" />
+      <workItem from="1770255904038" duration="7481000" />
+      <workItem from="1770878300662" duration="893000" />
+      <workItem from="1772596181104" duration="1196000" />
+      <workItem from="1776669397192" duration="2612000" />
+      <workItem from="1777007864911" duration="1172000" />
     </task>
     <servers />
   </component>
@@ -206,6 +239,17 @@
           <line>11</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/crape_googlemaps_mail_cities6.py</url>
+          <line>23</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="NONE" type="python-line">
+          <url>file://$PROJECT_DIR$/crape_googlemaps_mail_cities7.py</url>
+          <line>23</line>
+          <log-expression expression="eywords_austria = [&#10;    &quot;travel companies in Vienna&quot;,&#10;    &quot;travel companies in Salzburg&quot;,&#10;    &quot;travel companies in Innsbruck&quot;,&#10;    &quot;travel companies in Graz&quot;,&#10;    &quot;travel companies in Linz&quot;,&#10;    &quot;travel companies in Klagenfurt&quot;,&#10;    &quot;travel companies in Villach&quot;,&#10;    &quot;travel companies in Bregenz&quot;,&#10;    &quot;travel companies in St. Pölten&quot;,&#10;    &quot;travel companies in Wels&quot;&#10;]" language="Python" />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
@@ -214,31 +258,36 @@
     <SUITE FILE_PATH="coverage/scrape_data$crape_googlemaps_free_by_list_cities5.coverage" NAME="crape_googlemaps_free_by_list_cities5 Coverage Results" MODIFIED="1754442773805" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/scrape_data$vieclam_thainguyen.coverage" NAME="vieclam_thainguyen Coverage Results" MODIFIED="1754454593376" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/scrape_data$vieclam_quangnam2.coverage" NAME="vieclam_quangnam2 Coverage Results" MODIFIED="1755162610476" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/scrape_data$vieclam_bacninhso1.coverage" NAME="vieclam_bacninhso1 Coverage Results" MODIFIED="1753858605265" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/scrape_data$vieclam_phutho2.coverage" NAME="vieclam_phutho2 Coverage Results" MODIFIED="1754642651280" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/scrape_data$vieclam_bacninhso1.coverage" NAME="vieclam_bacninhso1 Coverage Results" MODIFIED="1768034053878" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/scrape_data$vieclam_phutho2.coverage" NAME="vieclam_phutho2 Coverage Results" MODIFIED="1770256656279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/scrape_data$crape_googlemaps_free_by_list_cities2.coverage" NAME="crape_googlemaps_free_by_list_cities2 Coverage Results" MODIFIED="1755746737930" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/scrape_data$vieclam_bacninh_trungtamdichvuvieclam.coverage" NAME="vieclam_bacninh_trungtamdichvuvieclam Coverage Results" MODIFIED="1755078677982" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/scrape_data$crape_googlemaps_mail_cities2.coverage" NAME="crape_googlemaps_mail_cities2 Coverage Results" MODIFIED="1759801991164" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/scrape_data$crape_googlemaps_mail_cities5.coverage" NAME="crape_googlemaps_mail_cities5 Coverage Results" MODIFIED="1760407635609" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/scrape_data$crape_googlemaps_free_by_list_cities.coverage" NAME="crape_googlemaps_free_by_list_cities Coverage Results" MODIFIED="1756182360223" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/scrape_data$vieclam_phutho.coverage" NAME="vieclam_phutho Coverage Results" MODIFIED="1754641983312" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/scrape_data$crape_googlemaps_free_by_list_cities7.coverage" NAME="crape_googlemaps_free_by_list_cities7 Coverage Results" MODIFIED="1759542643957" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/scrape_data$vieclam_phutho.coverage" NAME="vieclam_phutho Coverage Results" MODIFIED="1770261309893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/scrape_data$vieclam_haiphong.coverage" NAME="vieclam_haiphong Coverage Results" MODIFIED="1754988043598" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/scrape_data$crape_googlemaps_free_by_list_cities1.coverage" NAME="crape_googlemaps_free_by_list_cities1 Coverage Results" MODIFIED="1759542712429" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/scrape_data$vieclam_hungyen2.coverage" NAME="vieclam_hungyen2 Coverage Results" MODIFIED="1776669956264" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/scrape_data$vieclam_quangngai.coverage" NAME="vieclam_quangngai Coverage Results" MODIFIED="1755157531993" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/scrape_data$crape_googlemaps_mail_cities1_1.coverage" NAME="crape_googlemaps_mail_cities1.1 Coverage Results" MODIFIED="1759801351212" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/scrape_data$crape_googlemaps_mail_cities1_1.coverage" NAME="crape_googlemaps_mail_cities1.1 Coverage Results" MODIFIED="1761010953880" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/scrape_data$crape_googlemaps_free_by_list_cities4.coverage" NAME="crape_googlemaps_free_by_list_cities4 Coverage Results" MODIFIED="1759542841812" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/scrape_data$send_whatsapp.coverage" NAME="send_whatsapp Coverage Results" MODIFIED="1754560761384" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/scrape_data$vieclam_quangnam.coverage" NAME="vieclam_quangnam Coverage Results" MODIFIED="1755159885168" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/scrape_data$vieclam_HaiDuong.coverage" NAME="vieclam_HaiDuong Coverage Results" MODIFIED="1757580311802" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/scrape_data$vieclam_HaiDuong.coverage" NAME="vieclam_HaiDuong Coverage Results" MODIFIED="1766718940242" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/scrape_data$crape_googlemaps_mail_cities7.coverage" NAME="crape_googlemaps_mail_cities7 Coverage Results" MODIFIED="1760494230670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/scrape_data$crape_googlemaps_free_by_list_cities6.coverage" NAME="crape_googlemaps_free_by_list_cities6 Coverage Results" MODIFIED="1755585758870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/scrape_data$crape_googlemaps_mail_cities1.coverage" NAME="crape_googlemaps_mail_cities1 Coverage Results" MODIFIED="1759725489007" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/scrape_data$crape_googlemaps_mail_cities4.coverage" NAME="crape_googlemaps_mail_cities4 Coverage Results" MODIFIED="1759991807210" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/scrape_data$crape_googlemaps_mail_cities4.coverage" NAME="crape_googlemaps_mail_cities4 Coverage Results" MODIFIED="1760342036526" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/scrape_data$vieclam_bacninh_izabacninh.coverage" NAME="vieclam_bacninh_izabacninh Coverage Results" MODIFIED="1753858715251" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/scrape_data$vieclam_haiphong2.coverage" NAME="vieclam_haiphong2 Coverage Results" MODIFIED="1757994371341" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/scrape_data$vieclam_vinhphuc2.coverage" NAME="vieclam_vinhphuc2 Coverage Results" MODIFIED="1754555723381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/scrape_data$vieclam_ninhbinh.coverage" NAME="vieclam_ninhbinh Coverage Results" MODIFIED="1754886920913" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/scrape_data$vieclam_ninhbinh.coverage" NAME="vieclam_ninhbinh Coverage Results" MODIFIED="1766549949663" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/scrape_data$vieclam_hungyen3_laycamail_va_sdt.coverage" NAME="vieclam_hungyen3_laycamail_va_sdt Coverage Results" MODIFIED="1777008792836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/scrape_data$crape_googlemaps_free_by_list_cities3.coverage" NAME="crape_googlemaps_free_by_list_cities3 Coverage Results" MODIFIED="1755738311239" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/scrape_data$crape_googlemaps_mail_cities3.coverage" NAME="crape_googlemaps_mail_cities3 Coverage Results" MODIFIED="1759991802846" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/scrape_data$crape_googlemaps_mail_cities6.coverage" NAME="crape_googlemaps_mail_cities6 Coverage Results" MODIFIED="1760513119023" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/scrape_data$crape_googlemaps_mail_cities3.coverage" NAME="crape_googlemaps_mail_cities3 Coverage Results" MODIFIED="1760072312160" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/scrape_data$crape_googlemaps_free.coverage" NAME="crape_googlemaps_free Coverage Results" MODIFIED="1755565581835" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/scrape_data$vieclam_halong.coverage" NAME="vieclam_halong Coverage Results" MODIFIED="1754108176813" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/scrape_data$vieclam_haiphong2_getmails.coverage" NAME="vieclam_haiphong2_getmails Coverage Results" MODIFIED="1758163161642" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />

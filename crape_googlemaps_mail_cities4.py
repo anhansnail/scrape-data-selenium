@@ -22,16 +22,16 @@ import time
 #     "travel companies in Haarlem"
 # ]
 keywords_spain = [
-    "travel companies in Madrid",
-    "travel companies in Barcelona",
-    "travel companies in Valencia",
+    # "travel companies in Madrid",
+    # "travel companies in Barcelona",
+    # "travel companies in Valencia",
     # "travel companies in Seville",
     # "travel companies in Zaragoza",
     # "travel companies in Málaga",
-    # "travel companies in Bilbao",
-    # "travel companies in Granada",
-    # "travel companies in Alicante",
-    # "travel companies in Salamanca"
+    "travel companies in Bilbao",
+    "travel companies in Granada",
+    "travel companies in Alicante",
+    "travel companies in Salamanca"
 ]
 keywords = keywords_spain
 max_results = 1000   # test nhanh
@@ -186,7 +186,7 @@ for keyword in keywords:
 
 # --- Lưu ra Excel ---
 df = pd.DataFrame(all_results)
-df.to_excel("ket_qua_travel_agent_all_spain.xlsx", index=False)
+df.to_excel("ket_qua_travel_agent_all_spain3.xlsx", index=False)
 print("🎉 Đã lưu file ket_qua_travel_agent_all_spain.xlsx")
 
 # --- Thoát trình duyệt ---
