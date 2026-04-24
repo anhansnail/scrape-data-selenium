@@ -5,21 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5e7e9c3-0930-41a8-875b-b5af2cc26abf" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/crape_googlemaps_mail_cities5.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crape_googlemaps_mail_cities6.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/crape_googlemaps_mail_cities7.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vieclam_hungyen2.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/vieclam_hungyen3_laycamail_va_sdt.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crape_googlemaps_mail_cities1.1.py" beforeDir="false" afterPath="$PROJECT_DIR$/crape_googlemaps_mail_cities1.1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crape_googlemaps_mail_cities3.py" beforeDir="false" afterPath="$PROJECT_DIR$/crape_googlemaps_mail_cities3.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crape_googlemaps_mail_cities4.py" beforeDir="false" afterPath="$PROJECT_DIR$/crape_googlemaps_mail_cities4.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/thong_tin_lien_he_phutho_1_2.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vieclam_HaiDuong.py" beforeDir="false" afterPath="$PROJECT_DIR$/vieclam_HaiDuong.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vieclam_bacninhso1.py" beforeDir="false" afterPath="$PROJECT_DIR$/vieclam_bacninhso1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vieclam_ninhbinh.py" beforeDir="false" afterPath="$PROJECT_DIR$/vieclam_ninhbinh.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vieclam_phutho.py" beforeDir="false" afterPath="$PROJECT_DIR$/vieclam_phutho.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vieclam_phutho2.py" beforeDir="false" afterPath="$PROJECT_DIR$/vieclam_phutho2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vieclam_hungyen3_laycamail_va_sdt.py" beforeDir="false" afterPath="$PROJECT_DIR$/vieclam_hungyen3_laycamail_va_sdt.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,70 +34,70 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "Python.crape_googlemaps_free.executor": "Run",
-    "Python.crape_googlemaps_free_by_list_cities.executor": "Run",
-    "Python.crape_googlemaps_free_by_list_cities1.executor": "Run",
-    "Python.crape_googlemaps_free_by_list_cities2.executor": "Run",
-    "Python.crape_googlemaps_free_by_list_cities3.executor": "Run",
-    "Python.crape_googlemaps_free_by_list_cities4.executor": "Run",
-    "Python.crape_googlemaps_free_by_list_cities5.executor": "Run",
-    "Python.crape_googlemaps_free_by_list_cities6.executor": "Run",
-    "Python.crape_googlemaps_free_by_list_cities7.executor": "Run",
-    "Python.crape_googlemaps_mail_cities1.1.executor": "Run",
-    "Python.crape_googlemaps_mail_cities1.executor": "Run",
-    "Python.crape_googlemaps_mail_cities2.executor": "Run",
-    "Python.crape_googlemaps_mail_cities3.executor": "Run",
-    "Python.crape_googlemaps_mail_cities4.executor": "Run",
-    "Python.crape_googlemaps_mail_cities5.executor": "Run",
-    "Python.crape_googlemaps_mail_cities6.executor": "Run",
-    "Python.crape_googlemaps_mail_cities7.executor": "Run",
-    "Python.send_whatsapp.executor": "Run",
-    "Python.vieclam_HaiDuong.executor": "Run",
-    "Python.vieclam_bacninh_izabacninh.executor": "Run",
-    "Python.vieclam_bacninh_trungtamdichvuvieclam.executor": "Run",
-    "Python.vieclam_bacninhso1.executor": "Run",
-    "Python.vieclam_haiphong.executor": "Run",
-    "Python.vieclam_haiphong2.executor": "Run",
-    "Python.vieclam_haiphong2_getmails.executor": "Run",
-    "Python.vieclam_halong.executor": "Run",
-    "Python.vieclam_hungyen.executor": "Run",
-    "Python.vieclam_hungyen2.executor": "Run",
-    "Python.vieclam_hungyen3_laycamail_va_sdt.executor": "Run",
-    "Python.vieclam_ninhbinh.executor": "Run",
-    "Python.vieclam_phutho.executor": "Run",
-    "Python.vieclam_phutho2.executor": "Run",
-    "Python.vieclam_quangnam.executor": "Run",
-    "Python.vieclam_quangnam2.executor": "Run",
-    "Python.vieclam_quangngai.executor": "Run",
-    "Python.vieclam_thainguyen.executor": "Run",
-    "Python.vieclam_vinhphuc2.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Admin/IdeaProjects/scrape_data",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;Python.crape_googlemaps_free.executor&quot;: &quot;Run&quot;,
+    &quot;Python.crape_googlemaps_free_by_list_cities.executor&quot;: &quot;Run&quot;,
+    &quot;Python.crape_googlemaps_free_by_list_cities1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.crape_googlemaps_free_by_list_cities2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.crape_googlemaps_free_by_list_cities3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.crape_googlemaps_free_by_list_cities4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.crape_googlemaps_free_by_list_cities5.executor&quot;: &quot;Run&quot;,
+    &quot;Python.crape_googlemaps_free_by_list_cities6.executor&quot;: &quot;Run&quot;,
+    &quot;Python.crape_googlemaps_free_by_list_cities7.executor&quot;: &quot;Run&quot;,
+    &quot;Python.crape_googlemaps_mail_cities1.1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.crape_googlemaps_mail_cities1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.crape_googlemaps_mail_cities2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.crape_googlemaps_mail_cities3.executor&quot;: &quot;Run&quot;,
+    &quot;Python.crape_googlemaps_mail_cities4.executor&quot;: &quot;Run&quot;,
+    &quot;Python.crape_googlemaps_mail_cities5.executor&quot;: &quot;Run&quot;,
+    &quot;Python.crape_googlemaps_mail_cities6.executor&quot;: &quot;Run&quot;,
+    &quot;Python.crape_googlemaps_mail_cities7.executor&quot;: &quot;Run&quot;,
+    &quot;Python.send_whatsapp.executor&quot;: &quot;Run&quot;,
+    &quot;Python.vieclam_HaiDuong.executor&quot;: &quot;Run&quot;,
+    &quot;Python.vieclam_bacninh_izabacninh.executor&quot;: &quot;Run&quot;,
+    &quot;Python.vieclam_bacninh_trungtamdichvuvieclam.executor&quot;: &quot;Run&quot;,
+    &quot;Python.vieclam_bacninhso1.executor&quot;: &quot;Run&quot;,
+    &quot;Python.vieclam_haiphong.executor&quot;: &quot;Run&quot;,
+    &quot;Python.vieclam_haiphong2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.vieclam_haiphong2_getmails.executor&quot;: &quot;Run&quot;,
+    &quot;Python.vieclam_halong.executor&quot;: &quot;Run&quot;,
+    &quot;Python.vieclam_hungyen.executor&quot;: &quot;Run&quot;,
+    &quot;Python.vieclam_hungyen2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.vieclam_hungyen3_laycamail_va_sdt.executor&quot;: &quot;Run&quot;,
+    &quot;Python.vieclam_ninhbinh.executor&quot;: &quot;Run&quot;,
+    &quot;Python.vieclam_phutho.executor&quot;: &quot;Run&quot;,
+    &quot;Python.vieclam_phutho2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.vieclam_quangnam.executor&quot;: &quot;Run&quot;,
+    &quot;Python.vieclam_quangnam2.executor&quot;: &quot;Run&quot;,
+    &quot;Python.vieclam_quangngai.executor&quot;: &quot;Run&quot;,
+    &quot;Python.vieclam_thainguyen.executor&quot;: &quot;Run&quot;,
+    &quot;Python.vieclam_vinhphuc2.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Admin/IdeaProjects/scrape_data&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Admin\IdeaProjects\scrape_data" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Python.crape_googlemaps_free">
     <configuration name="crape_googlemaps_free" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="scrape_data" />
       <option name="ENV_FILES" value="" />
@@ -225,6 +211,7 @@
       <workItem from="1772596181104" duration="1196000" />
       <workItem from="1776669397192" duration="2612000" />
       <workItem from="1777007864911" duration="1172000" />
+      <workItem from="1777009100730" duration="89000" />
     </task>
     <servers />
   </component>

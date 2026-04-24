@@ -21,7 +21,7 @@ result = []
 # Crawl toàn bộ trang
 for page in range(1, total_pages + 1):
     print(f"Đang lấy trang {page}/{total_pages}")
-gi
+
     res = requests.get(BASE_URL, params={"page": page, "limit": limit})
     json_data = res.json()
 
